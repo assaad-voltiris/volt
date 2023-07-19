@@ -1,0 +1,148 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li {
+    float: left;
+    margin: 0 10px;
+}
+
+#navbar li a {
+    display: block;
+    color: #5DCA88; /* darkgray */
+    text-align: center;
+    padding: 20px 30px; /* Adjust size with padding */
+    text-decoration: none;
+    font-size: 18px; /* Adjust font size */
+}
+
+#navbar li a:hover {
+    background-color: darkgray;
+}
+
+
+#menuForm {
+    text-align: center; 
+    margin-top: 50px;
+}
+
+#menuForm label, #menuForm input[type="submit"] {
+    font-size: 20px; 
+    color: darkgray;
+}
+
+#menuForm input[type="text"], #menuForm input[type="password"] {
+    width: 80%;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#menuForm select {
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px 0;
+    color: black;
+    background-color: white;
+    border: 1px solid darkgray;
+}
+
+#unitTests {
+    text-align: center;
+    padding: 20px;
+}
+
+#unitTests ul {
+    margin:auto;
+    width: 80%;
+    list-style-type: none;
+    padding: 0;
+}
+
+#unitTests ul li:hover {
+    background-color: darkgray;
+    color: white;
+    cursor: pointer;
+}
+
+#unitTests button {
+    padding: 15px 25px;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+#debugConsole, #unitTestsConsole {
+    margin:auto;
+    width: 80%;
+    text-align: left;
+    white-space: pre-line;  /* Preserves line breaks */
+    overflow-wrap: break-word;
+    font-size: 16px;
+    color: darkgray;
+    border: 1px solid darkgray;
+    padding: 10px; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#menuForm button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+#logs table {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+#logs th, #logs td {
+    border: 1px solid darkgray;
+    padding: 8px;
+    text-align: left;
+}
+
+#logs .Trace {
+    color: rgb(255, 238, 0);
+}
+
+#logs .Debug {
+    color: blue;
+}
+
+#logs .Information {
+    color: green;
+}
+
+#logs .Warnings {
+    color: orange;
+}
+
+#logs .Error {
+    color: red;
+}
+
+#logs .Critical {
+    color: rgb(141, 7, 7);
+}

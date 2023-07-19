@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="settings.js"></script>
+</head>
+<body>
+
+    <nav id="navbar">
+        <ul>
+            <li>
+                <a href="https://voltiris.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="255" height="95" viewBox="0 0 255 95" fill="none">
+                        <rect width="255" height="95" fill="white"></rect>
+                        <path d="M78.9035 62.4877H83.8989L95.4221 40.035H90.9783L81.6617 58.5636H81.6004L72.2225 40.035H67.3496L78.9035 62.4877Z" fill="#5DCA88"></path>
+                        <path d="M108.611 62.8972C117.652 62.8972 121.605 57.6764 121.605 51.159C121.605 44.8121 117.376 39.6255 108.611 39.6255C99.8458 39.6255 95.6166 44.8121 95.6166 51.159C95.6166 58.0176 99.8152 62.8972 108.611 62.8972ZM108.611 59.1778C102.819 59.1778 99.9684 55.9703 99.9684 51.159C99.9684 46.8254 102.849 43.3449 108.611 43.3449C114.372 43.3449 117.253 46.8254 117.253 51.159C117.253 55.7314 114.556 59.1778 108.611 59.1778Z" fill="#5DCA88"></path>
+                        <path d="M124.964 62.4877H142.31V58.6318H129.193V40.035H124.964V62.4877Z" fill="#5DCA88"></path>
+                        <path d="M146.448 62.4877H150.677V43.7543H159.381V40.035H137.745V43.7543H146.448V62.4877Z" fill="#5DCA88"></path>
+                        <path d="M162.377 62.4877H166.576V40.035H162.377V62.4877Z" fill="#5DCA88"></path>
+                        <path d="M170.814 62.4877H175.044V53.8205H184.422C187.333 53.8205 188.467 55.0831 188.467 57.7105V62.4877H192.666V57.7105C192.666 54.9125 191.899 52.6604 189.019 51.9779V51.9097C191.624 51.159 192.788 49.0434 192.788 46.5865C192.788 42.5942 190.214 40.035 183.502 40.035H170.814V62.4877ZM175.044 50.7154V43.7543H183.165C187.302 43.7543 188.835 45.1192 188.835 47.2349C188.835 49.3163 187.364 50.7154 184.023 50.7154H175.044Z" fill="#5DCA88"></path>
+                        <path d="M196.915 62.4877H201.114V40.035H196.915V62.4877Z" fill="#5DCA88"></path>
+                        <path d="M216.17 62.8972C226.253 62.8972 228 58.8025 228 55.3902C228 53.2405 226.927 51.4661 225.027 50.6471C223.219 49.9305 220.308 49.7258 217.458 49.5552C215.19 49.4187 211.788 49.2822 210.531 48.8045C209.52 48.395 208.968 47.7808 208.968 46.6548C208.968 44.5392 211.144 43.1742 216.078 43.1742C221.472 43.1742 223.219 44.8121 223.219 47.3713H227.05C227.05 43.3449 225.334 39.6255 216.078 39.6255C208.325 39.6255 204.77 42.9695 204.77 46.996C204.77 49.1116 205.72 50.7495 207.221 51.5343C208.907 52.4215 212.156 52.7286 214.791 52.8992C217.151 53.0357 220.461 53.1381 221.901 53.5134C223.158 53.8888 223.771 54.6054 223.771 55.7314C223.771 57.6764 222.637 59.3484 216.17 59.3484C209.857 59.3484 208.723 57.0963 208.723 54.9466H204.892C204.892 57.9153 205.965 62.8972 216.17 62.8972Z" fill="#5DCA88"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M46.728 54.0339L40.4488 39.9083H37.5656L47.5615 62.3948L48.8098 62.3948H50.4346L50.4447 62.3948L50.4399 62.3842L65.6546 32L46.728 54.0339ZM32.2828 39.9082H35.166L45.1619 62.3947H42.2787L32.2828 39.9082ZM29.8832 39.9082H27L36.9959 62.3947H39.879L29.8832 39.9082Z" fill="#5DCA88"></path>
+                    </svg>
+                </a>
+            </li>
+            <!-- <li id="loginLink"><a href="#login">Login</a></li> -->
+            <!-- <li><a href="#status">Status</a></li>  -->
+            <li id="settingsLink"><a href="#settings">Settings</a></li>
+            <li id="unitTestsLink"><a href="#unitTests">Unit Tests</a></li>
+            <li id="debugLink"><a href="#debug">Debug</a></li>
+            <li id="logLink"><a href="#logs">Logs</a></li>
+        </ul>
+    </nav>
+<!--
+    <section id="login" style="display: none;">
+        <form id="menuForm">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Confirm">
+        </form>
+    </section>
+ -->
+    <section id="settings" style="display: none;">
+        <form id="menuForm">
+            <label for="logLevel">Current Log Level:</label><br>
+            <select id="logLevelDropDown">
+                <script>
+                    setupLogLevelDropDown ();
+                </script>
+            </select><br>
+            <label for="serialPortName">Serial Port:</label><br>
+            <input type="text" id="serialPortName" name="serialPortName"><br>
+            <script>
+                setupSerialPortName ();
+            </script>
+        </form>
+    </section>
+
+    <section id="unitTests" style="display: none;">
+        <form id="menuForm">
+            <h2>Unit Tests</h2>
+            <ul id="testList">
+                <!-- Individual tests will be added here -->
+            </ul>
+            <button id="runAllTests">Run All</button>
+            <p id="unitTestsConsole"><!-- Unit Tests console will be displayed here --></p>
+            <button id="clearUnitTestsSubmit">Clear</button>
+        </form>
+    </section>
+
+    <section id="debug" style="display: none;">
+        <form id="menuForm">
+            <h2>Debug</h2>
+            <input type="text" id="debugCommand" placeholder="Enter a command">
+            <button id="debugSubmit">Submit</button>
+            <p id="debugConsole"><!-- Debug console will be displayed here --></p>
+            <button id="clearDebugSubmit">Clear</button>
+        </form>
+    </section>
+
+    <section id="logs" style="display: none;">
+        <form id="menuForm">
+            <select id="logSort">
+                <option value="dateDescending">Sort by Date (Descending)</option>
+                <option value="dateAscending">Sort by Date (Ascending)</option>
+            </select>
+            <table id="logTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Gravity</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody id="logList">
+                    <!-- Logs will be added here -->
+                </tbody>
+            </table>
+        </form>
+    </section>
+
+    <script src="unitTests.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
